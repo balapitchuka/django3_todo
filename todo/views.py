@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from todo.models import Todo
 
-# Create your views here.
+def current_todos(request):
+    return render(request, 'todo/current_todos.html')
